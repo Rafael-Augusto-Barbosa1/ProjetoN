@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ProjetoNilson4",
+    "\\ProjetoNilson4\\Libraries",
+    "\\ProjetoNilson4\\Libraries\\Middleware"
+  ],
+  "SelectedNode": "\\ProjetoNilson4\\Libraries\\Middleware\\ValidateAntiForgeryTokenMiddleware.cs",
+  "PreviewInSolutionExplorer": false
+}

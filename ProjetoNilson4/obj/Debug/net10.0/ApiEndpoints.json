@@ -1,0 +1,91 @@
+[
+  {
+    "ContainingType": "ProjetoNilson4.Areas.Colaborador.Controllers.API.ClienteApiController",
+    "Method": "ListarClientes",
+    "RelativePath": "api/ClienteApi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjetoNilson4.Areas.Colaborador.Controllers.API.ClienteApiController",
+    "Method": "Post",
+    "RelativePath": "api/ClienteApi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cliente",
+        "Type": "ProjetoNilson4.Models.Cliente",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjetoNilson4.Areas.Colaborador.Controllers.API.ClienteApiController",
+    "Method": "BuscarPorId",
+    "RelativePath": "api/ClienteApi/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjetoNilson4.Areas.Colaborador.Controllers.API.ClienteApiController",
+    "Method": "Atualizar",
+    "RelativePath": "api/ClienteApi/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "cliente",
+        "Type": "ProjetoNilson4.Models.Cliente",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjetoNilson4.Areas.Colaborador.Controllers.API.ClienteApiController",
+    "Method": "Excluir",
+    "RelativePath": "api/ClienteApi/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjetoNilson4.Areas.Colaborador.Controllers.API.ColaboradorApiController",
+    "Method": "ListarColaboradores",
+    "RelativePath": "api/ColaboradorApi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

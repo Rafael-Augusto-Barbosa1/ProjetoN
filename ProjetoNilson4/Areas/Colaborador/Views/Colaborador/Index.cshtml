@@ -1,0 +1,60 @@
+@model IEnumerable<ProjetoNilson4.Models.Colaborador>
+
+@{
+    ViewData["Title"] = "Colaboradores";
+}
+
+<h1>Colaboradores</h1>
+
+<p>
+    <a class="btn btn-primary" asp-action="Cadastro" asp-controller="Colaborador" asp-area="Colaborador">Cadastrar</a>
+</p>
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <thead>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.CPF)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Senha)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Tipo)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Telefone)
+            </th>
+            <th scope="col">
+                <h3>Ações</h3>
+            </th>
+        </thead>
+        <tbody>
+            @foreach(Colaborador colaborador in Model)
+            {
+                <tr>
+                    <th scope="row">@colaborador.Id</th>
+                    <td>@colaborador.Nome</td>
+                    <td>@colaborador.CPF</td>
+                    <td>@colaborador.Email</td>
+                    <td>@colaborador.Senha</td>
+                    <td>@colaborador.Tipo</td>
+                    <td>@colaborador.Telefone</td>
+
+                    <td>
+                        <a asp-action="Atualizar" asp-route-id="@colaborador.Id" class="btn btn-secondary">Atualizar</a>
+                        <a asp-action="Excluir" asp-route-id="@colaborador.Id" class="btn btn-danger" onclick="return confirm('Deseja realmente excluir?')">Excluir</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
